@@ -1,6 +1,6 @@
 {
-  "name": "@stellarguard/stellar-uri",
-  "version": "3.0.1",
+  "name": "@suncewallet/stellar-uri",
+  "version": "1.0.0",
   "description": "A TypeScript/JavaScript implementation of SEP-0007 style Stellar URIs.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -56,11 +56,13 @@
     "@stellar/stellar-sdk": "*"
   },
   "dependencies": {
-    "@stellarguard/txrep": "^2.0.0"
+    "@suncewallet/txrep": "^1.0.0"
   },
   "devDependencies": {
     "@bitjson/typedoc": "^0.15.0-0",
     "@material-ui/core": "^3.3.1",
+    "@stellar/stellar-sdk": "^13.1.0",
+    "@types/node": "^22.13.11",
     "@types/sinon": "^5.0.5",
     "ava": "1.0.0-beta.7",
     "babel-polyfill": "^6.26.0",
@@ -77,12 +79,11 @@
     "react-dom": "^16.6.0",
     "sinon": "^7.0.0",
     "standard-version": "^4.4.0",
-    "@stellar/stellar-sdk": "^13.1.0",
     "trash-cli": "^1.4.0",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-immutable": "^4.7.0",
-    "typescript": "^3.5.3"
+    "typescript": "^5.3.5"
   },
   "ava": {
     "failFast": true,

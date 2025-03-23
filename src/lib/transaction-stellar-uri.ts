@@ -1,4 +1,4 @@
-import { toTransaction, toTxrep } from '@stellarguard/txrep';
+import { toTransaction, toTxrep } from '@suncewallet/txrep';
 import { Networks, Transaction } from '@stellar/stellar-sdk';
 import { StellarUri } from './stellar-uri';
 
