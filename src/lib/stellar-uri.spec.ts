@@ -1,6 +1,6 @@
 // tslint:disable:no-expression-statement no-object-mutation
 import ava, { TestInterface } from 'ava';
-import { Keypair, StellarTomlResolver } from 'stellar-sdk';
+import { Keypair, StellarToml } from '@stellar/stellar-sdk';
 import { StellarUri as StellarUriBase } from './stellar-uri';
 
 import sinon from 'sinon';
@@ -10,7 +10,7 @@ const test = ava as TestInterface<{
 }>;
 
 test.beforeEach(t => {
-  t.context.StellarTomlResolver = sinon.stub(StellarTomlResolver, 'resolve');
+  t.context.StellarTomlResolver = sinon.stub(StellarToml.Resolver, 'resolve');
 });
 
 test.afterEach(() => {

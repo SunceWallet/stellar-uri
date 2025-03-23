@@ -1,4 +1,4 @@
-import { Keypair, Networks, StellarTomlResolver } from 'stellar-sdk';
+import { Keypair, Networks, StellarToml } from '@stellar/stellar-sdk';
 
 import { Replacement, ReplacementsParser } from './replacement';
 
@@ -224,7 +224,7 @@ export abstract class StellarUri {
     }
 
     try {
-      const toml = await StellarTomlResolver.resolve(originDomain);
+      const toml = await StellarToml.Resolver.resolve(originDomain);
       const signingKey = toml.URI_REQUEST_SIGNING_KEY;
 
       if (!signingKey) {

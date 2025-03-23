@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { Button, TextField, Typography, withStyles } from '@material-ui/core';
 
-import { Keypair } from 'stellar-sdk';
+import { Keypair } from '@stellar/stellar-sdk';
 
 import { TransactionStellarUri } from '../src';
 import QRCode from './QRCode';

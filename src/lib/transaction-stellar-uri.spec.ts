@@ -6,7 +6,7 @@ import {
   Networks,
   Operation,
   TransactionBuilder
-} from 'stellar-sdk';
+} from '@stellar/stellar-sdk';
 import { TransactionStellarUri } from './transaction-stellar-uri';
 
 const pubKey = 'GD2FWJZFRDO6YCZV4G2JMVDFHJ2LYNYGYMBFSFYZ4MLMVJ4TBTJJIL7F';
