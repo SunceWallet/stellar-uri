@@ -1,6 +1,32 @@
+import { MemoHash, MemoID, MemoNone, MemoReturn, MemoText } from '@stellar/stellar-sdk';
 import { StellarUri } from './stellar-uri';
 
 type MemoType = 'none' | 'id' | 'text' | 'hash' | 'return';
+
+type SEP07MemoType = 'MEMO_ID' | 'MEMO_TEXT' | 'MEMO_HASH' | 'MEMO_RETURN'
+
+// Convert SEP07 memo type to MemoType.
+// For backward compatiblity return the original value if it is already memoType
+const toMemoType = (memoType: SEP07MemoType | MemoType | undefined): MemoType | undefined => {
+  if (!memoType) return
+
+  switch (memoType) {
+    case MemoID:
+    case "MEMO_ID":
+      return MemoID
+    case MemoText:
+    case "MEMO_TEXT":
+      return MemoText
+    case MemoHash:
+    case "MEMO_HASH":
+      return MemoHash
+    case MemoReturn:
+    case "MEMO_RETURN":
+      return MemoReturn
+  }
+  console.warn("Unknown memo type: ", memoType)
+  return MemoNone
+}
 
 /**
  * The pay operation represents a request to pay a specific address with a specific asset, regardless of the source asset used by the payer.
@@ -21,6 +47,7 @@ export class PayStellarUri extends StellarUri {
 
   constructor(uri?: URL | string) {
     super(uri ? uri : new URL('web+stellar:pay'));
+    this.memoType = toMemoType(this.memoType)
   }
 
   /**
