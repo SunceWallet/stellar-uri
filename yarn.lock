@@ -1442,12 +1442,12 @@
     toml "^3.0.0"
     urijs "^1.19.1"
 
-"@suncewallet/txrep@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/@suncewallet/txrep/-/txrep-1.0.1.tgz"
-  integrity sha512-TKNIpU6ByvU3CDKOTtizDLIAtXAPCsZd8mad56Io5CurQ7bh2TMLi5S6ErAwpb3XwVokT0NXhKqZJxgCK8GIrQ==
+"@suncewallet/txrep@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@suncewallet/txrep/-/txrep-1.0.2.tgz"
+  integrity sha512-VSbpALG6oRQqY5KH0tGxzCfD0k0ULCHiUizRYkExpikx84udjFWvDWF81Te+top4KR0pQc41JAtktUN5OydtBQ==
   dependencies:
-    bignumber.js "^4.0.0"
+    bignumber.js "^9.1.2"
 
 "@types/jss@^9.5.6":
   version "9.5.8"
@@ -2017,11 +2017,6 @@ bcrypt-pbkdf@^1.0.0:
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4= sha512-qeFIXtP4MSoi6NLqO12WfqARWWuCKi2Rn/9hJLEmtB5yTNr9DqFWkJRCf2qShWzPeAMRnOgCrq0sg/KLv5ES9w==
   dependencies:
     tweetnacl "^0.14.3"
-
-bignumber.js@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/bignumber.js/-/bignumber.js-4.1.0.tgz"
-  integrity sha512-eJzYkFYy9L4JzXsbymsFn3p54D+llV27oTQ+ziJG7WFRheJcNZilgVXMG0LoZtlQSKBsJdWtLFqOD0u+U0jZKA==
 
 bignumber.js@^9.1.2:
   version "9.1.2"
