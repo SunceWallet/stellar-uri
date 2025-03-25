@@ -56,7 +56,7 @@
     "@stellar/stellar-sdk": "*"
   },
   "dependencies": {
-    "@suncewallet/txrep": "^1.0.0"
+    "@suncewallet/txrep": "^1.0.1"
   },
   "devDependencies": {
     "@bitjson/typedoc": "^0.15.0-0",

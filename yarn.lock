@@ -1442,10 +1442,10 @@
     toml "^3.0.0"
     urijs "^1.19.1"
 
-"@suncewallet/txrep@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@suncewallet/txrep/-/txrep-1.0.0.tgz"
-  integrity sha512-xo/J5xSS0GdpALohMDoWkQjOHpQuuASoM0ToQ8/bqX6VgdQoBLoM/LE10Da7YQqwjSTr6tYlOgA3Z1+xeBC7Pw==
+"@suncewallet/txrep@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@suncewallet/txrep/-/txrep-1.0.1.tgz"
+  integrity sha512-TKNIpU6ByvU3CDKOTtizDLIAtXAPCsZd8mad56Io5CurQ7bh2TMLi5S6ErAwpb3XwVokT0NXhKqZJxgCK8GIrQ==
   dependencies:
     bignumber.js "^4.0.0"
 
